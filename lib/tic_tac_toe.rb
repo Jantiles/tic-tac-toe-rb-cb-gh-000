@@ -80,10 +80,7 @@ def won?(board)
 end
 
 def full?(board)
-  num = [0, 1, 2, 3, 4, 5, 6, 7, 8]
-  all_pos = num.all? do |index|
-    position_taken?(board, index)
-  end
+  
 end
 
 def draw?(board)
