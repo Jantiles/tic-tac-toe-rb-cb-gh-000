@@ -71,8 +71,13 @@ def won?(board)
   end
 status
 end
-def full?(board)
 
+def full?(board)
+  if board.any? {|x| x== " " || x == "" || x.nil?}
+    false
+  else
+    true
+  end
 end
 
 def draw?(board)
