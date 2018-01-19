@@ -98,8 +98,12 @@ def over?(board)
 end
 
 def winner(board)
-  winner = won?(board)
-  won?(board) ? board[winner[0]] : nil
+  the_winner = won?(board)
+  if !over?(board) || !won?(board)
+    nil
+  else
+    board[the_winner[0]]
+  end
 end
 
 def play(board)
